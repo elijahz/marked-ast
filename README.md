@@ -4,6 +4,8 @@ A modified version of [marked](https://github.com/chjj/marked) and [marked-ast](
 
 *IMPORTANT* This fork of the project not set up to update from npm sources, I'll work on that later. I just needed a non-nodejs version of this for a project and thought someone else might find it useful.
 
+Tests do not function and need reworked.
+
 ## Usage
 
 ```js
