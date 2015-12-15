@@ -1,8 +1,18 @@
+//////////////From https://github.com/chjj/marked///////////////////
 /**
  * marked - a markdown parser
  * Copyright (c) 2011-2014, Christopher Jeffrey. (MIT Licensed)
  * https://github.com/chjj/marked
  */
+ 
+ /////////////From https://github.com/pdubroy/marked-ast/package.json////////////
+/**
+*  "name": "marked-ast",		
+*  "version": "0.2.1",		
+*  "description": "Parses Markdown into an abstract syntax tree. Based on github.com/chjj/marked.",		
+*  "author": "Patrick Dubroy <pdubroy@gmail.com> (http://dubroy.com)",		
+*  "license": "MIT"
+*/
 
 ;(function() {
 
