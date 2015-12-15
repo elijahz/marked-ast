@@ -1,11 +1,14 @@
 # marked-ast
 
-A modified version of [marked](https://github.com/chjj/marked) that can produce an abstract syntax tree for Markdown.
+A modified version of [marked](https://github.com/chjj/marked) and [marked-ast](https://github.com/pdubroy/marked-ast) that can produce an abstract syntax tree for Markdown from a single js file.
+
+*IMPORTANT* This fork of the project not set up to update from npm sources, I'll work on that later. I just needed a non-nodejs version of this for a project and thought someone else might find it useful.
 
 ## Usage
 
 ```js
-var marked = require('marked-ast');
+//var marked = require('marked-ast');
+
 var ast = marked.parse('_This is **Markdown**_, he said.');
 var html = marked.render(ast);
 ```
@@ -38,23 +41,7 @@ The package is just a wrapper for `marked`, so the produced HTML should be ident
 Basic setup:
 
 ```bash
-git clone https://github.com/pdubroy/marked-ast.git
+git clone https://github.com/elijahz/marked-ast.git
 cd marked-ast
-npm install
-git submodule update --init
-```
-
-### Running Tests
-
-Use `npm test` to run the tests. Before checking code in, run `npm run prepublish`.
-
-### Updating Marked
-
-To update to a new version of marked:
-
-```bash
-cd third_party/marked
-git checkout <REF>  # E.g., `git checkout v0.3.3`
-cd ../..
-npm run rewrite && npm test
+cp ./markedast.js ~/ProjectDir/markedast.js
 ```
